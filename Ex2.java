@@ -7,17 +7,13 @@ public class Exercise14 {
         for (int i = 0; i<5; i++) {
             chis[i] = s.nextInt();
         }
-        boolean t = true;
-        int n = 4;
-        while (t) {
-            t = false;
-            for (int j=0; j<4; j++ ) {
-                if (chis[j]>chis[j+1]) {
+        for (int i = 0; i<5; i++) {
+            for (int j = 0; j < 4; j++) {
+                if (chis[j] > chis[j + 1]) {
                     int b = chis[j];
-                    int m = chis [j+1];
+                    int m = chis[j + 1];
                     chis[j] = m;
-                    chis[j+1]=b;
-                    t = true;
+                    chis[j + 1] = b;
                 }
             }
         }
